@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Machado Advocacia - Assessoria jurídica estratégica e personalizada. Direito Trabalhista, Civil, Empresarial e do Consumidor. Agende uma consulta.">
+    <title>Machado Advocacia | Segurança Jurídica para Proteger o que Importa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo" aria-label="Machado Advocacia">
+                <i class="fas fa-balance-scale"></i>
+                <span>MACHADO</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">HOME</a>
+                <a href="#sobre">SOBRE</a>
+                <a href="#areas">ÁREAS</a>
+                <a href="#perfil">PERFIL</a>
+                <a href="#contato">CONTATO</a>
+            </nav>
+            <a href="https://api.whatsapp.com/send?phone=5548991533133&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="nav-cta">
+                CONTATO <i class="fas fa-arrow-right"></i>
+            </a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#inicio">HOME</a>
+            <a href="#sobre">SOBRE</a>
+            <a href="#areas">ÁREAS</a>
+            <a href="#perfil">PERFIL</a>
+            <a href="#contato">CONTATO</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slide 1: Divórcio -->
+            <div class="hero-slide active">
+                <div class="hero-bg">
+                    <img src="assets/images/advogado-1.jpg" alt="Acolhimento no Divórcio" class="hero-bg-img">
+                </div>
+                <div class="hero-overlay" style="background: rgba(0,0,0,0.6);"></div>
+                <div class="hero-content">
+                    <div class="hero-inner">
+                        <div class="hero-badge">
+                            Dr. Bruno Machado
+                            <span class="badge-line"></span>
+                        </div>
+                        <h1>Acolhimento e profissionalismo! atendimento focado em <span class="gold">VOCÊ!</span></h1>
+                        <ul class="hero-list">
+                            <li><i class="fas fa-gem gold-icon"></i> Divórcio Humanizado;</li>
+                            <li><i class="fas fa-gem gold-icon"></i> Conciliação de Casais;</li>
+                            <li><i class="fas fa-gem gold-icon"></i> Consensual e Litigioso;</li>
+                            <li><i class="fas fa-gem gold-icon"></i> Pensão e Partilha dos bens</li>
+                            <li><i class="fas fa-gem gold-icon"></i> Guarda Compartilhada e Unilateral</li>
+                        </ul>
+                        <div class="hero-ctas">
+                            <a href="https://api.whatsapp.com/send?phone=5548991533133&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-primary">
+                                Fale agora por Whatsapp <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Família Praia -->
+            <div class="hero-slide">
+                <div class="hero-bg">
+                    <img src="assets/images/family_beach.png" alt="Família na praia" class="hero-bg-img">
+                </div>
+                <div class="hero-overlay" style="background: rgba(0,0,0,0.4);"></div>
+                <div class="hero-content">
+                    <div class="hero-inner">
+                        <div class="hero-badge">
+                            SOBRE O ESCRITÓRIO
+                            <span class="badge-line"></span>
+                        </div>
+                        <h1 style="max-width: 800px;">Aqui você é tratado com o acolhimento que seu caso <span class="gold">precisa!</span></h1>
+                        <p class="hero-sub" style="font-size: 1.5rem;">Mais que um cliente, respeito a sua história e sua família.</p>
+                        <div class="hero-ctas">
+                            <a href="https://api.whatsapp.com/send?phone=5548991533133&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-primary">
+                                Fale agora por Whatsapp <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider-btn prev-btn" id="heroPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" id="heroNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES BAR -->
+    <section class="advantages">
+        <div class="adv-grid">
+            <div class="adv-item anim">
+                <i class="fas fa-users"></i>
+                <h2>Atendimento personalizado</h2>
+                <p>Soluções jurídicas sob medida para cada cliente.</p>
+            </div>
+            <div class="adv-item anim">
+                <i class="fas fa-bullseye"></i>
+                <h2>Estratégia e resultados</h2>
+                <p>Atuação preventiva e contenciosa com foco no caso concreto.</p>
+            </div>
+            <div class="adv-item anim">
+                <i class="fas fa-shield-alt"></i>
+                <h2>Transparência e confiança</h2>
+                <p>Relações pautadas por ética, clareza e comprometimento.</p>
+            </div>
+            <div class="adv-item anim">
+                <i class="fas fa-balance-scale"></i>
+                <h2>Experiência e excelência</h2>
+                <p>Advocacia consolidada, moderna e em constante evolução.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="section-container sobre-grid">
+            <div class="sobre-text anim">
+                <p class="section-label">Sobre o escritório</p>
+                <h2 class="section-title-serif">Excelência. Estratégia. Compromisso.</h2>
+                <div class="gold-line"></div>
+                <p class="sobre-desc">O escritório Machado Advocacia atua com atendimento individualizado, rigor técnico e contato direto com os profissionais responsáveis pela carteira do cliente.</p>
+                <p class="sobre-desc-secondary">A banca atende pessoas físicas e empresas em demandas consultivas e contenciosas, combinando agilidade, precisão e custos operacionais adequados.</p>
+                <a href="#areas" class="link-gold">Saiba mais <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="sobre-img anim">
+                <img src="assets/images/advogado-5.jpg" alt="Ambiente do escritório Machado Advocacia">
+                <div class="sobre-img-overlay"></div>
+                <div class="sobre-img-brand">
+                    <div class="brand-name">MACHADO</div>
+                    <div class="brand-sub">Advocacia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM POSTS (Antiga Áreas de Atuação) -->
+    <section id="areas" class="areas">
+        <div class="section-container">
+            <div class="areas-header">
+                <div>
+                    <div class="label-with-line">
+                        <h2 class="section-label">NOSSO CONTEÚDO</h2>
+                        <span class="badge-line"></span>
+                    </div>
+                    <p class="section-desc">Acompanhe nossas orientações sobre divórcio e direito de família no Instagram.</p>
+                </div>
+                <a href="https://www.instagram.com/advogadobrunomachado/" target="_blank" class="link-gold">Seguir no Instagram <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="ig-carousel-container">
+                <button class="ig-slider-btn ig-prev" id="igPrev"><i class="fas fa-chevron-left"></i></button>
+                <div class="ig-carousel" id="igCarousel">
+                    <article class="ig-post anim">
+                        <div class="ig-post-img">
+                            <img src="assets/images/advogado-2.jpg" alt="Pensão - Quando rever o valor?">
+                            <i class="fab fa-instagram ig-icon"></i>
+                        </div>
+                        <div class="ig-post-content">
+                            <h3>PENSÃO: Quando rever o valor?</h3>
+                            <p>A pensão pode ser revista. Mas não é quando a pessoa quer. Apenas quando a lei permite!</p>
+                            <a href="https://www.instagram.com/advogadobrunomachado/" target="_blank" class="card-link">Ver post completo <i class="fas fa-arrow-right gold-icon"></i></a>
+                        </div>
+                    </article>
+                    <article class="ig-post anim">
+                        <div class="ig-post-img">
+                            <img src="assets/images/advogado-3.jpg" alt="Traição gera dano moral?">
+                            <i class="fab fa-instagram ig-icon"></i>
+                        </div>
+                        <div class="ig-post-content">
+                            <h3>TRAIÇÃO: Gera dano moral?</h3>
+                            <p>A traição PODE GERAR indenização por danos morais, dependendo do caso e do impacto sofrido pela pessoa traída.</p>
+                            <a href="https://www.instagram.com/advogadobrunomachado/" target="_blank" class="card-link">Ver post completo <i class="fas fa-arrow-right gold-icon"></i></a>
+                        </div>
+                    </article>
+                    <article class="ig-post anim">
+                        <div class="ig-post-img">
+                            <img src="assets/images/advogado-4.jpg" alt="3 Direitos que muita gente perde no divórcio">
+                            <i class="fab fa-instagram ig-icon"></i>
+                        </div>
+                        <div class="ig-post-content">
+                            <h3>3 Direitos</h3>
+                            <p>Que muita gente perde no divórcio por falta de orientação adequada.</p>
+                            <a href="https://www.instagram.com/divorcio.aconselhamento/" target="_blank" class="card-link">Ver post completo <i class="fas fa-arrow-right gold-icon"></i></a>
+                        </div>
+                    </article>
+                    <article class="ig-post anim">
+                        <div class="ig-post-img">
+                            <img src="assets/images/advogado-7.jpg" alt="5 erros no divórcio">
+                            <i class="fab fa-instagram ig-icon"></i>
+                        </div>
+                        <div class="ig-post-content">
+                            <h3>5 Erros no Divórcio</h3>
+                            <p>Evite atitudes que podem prejudicar seus direitos e prolongar o sofrimento no processo.</p>
+                            <a href="https://www.instagram.com/divorcio.aconselhamento/" target="_blank" class="card-link">Ver post completo <i class="fas fa-arrow-right gold-icon"></i></a>
+                        </div>
+                    </article>
+                    <article class="ig-post anim">
+                        <div class="ig-post-img">
+                            <img src="assets/images/advogado-8.jpg" alt="Quem trai perde o tudo no divórcio?">
+                            <i class="fab fa-instagram ig-icon"></i>
+                        </div>
+                        <div class="ig-post-content">
+                            <h3>Quem trai perde tudo?</h3>
+                            <p>Mitos e verdades sobre a infidelidade e a partilha de bens no divórcio.</p>
+                            <a href="https://www.instagram.com/divorcio.aconselhamento/" target="_blank" class="card-link">Ver post completo <i class="fas fa-arrow-right gold-icon"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <button class="ig-slider-btn ig-next" id="igNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUE ESCOLHER -->
+    <section class="porque">
+        <div class="section-container porque-grid">
+            <div class="porque-left anim">
+                <h2 class="section-title-serif">Por que escolher a Machado Advocacia?</h2>
+                <div class="gold-line"></div>
+                <div class="reasons-grid">
+                    <div class="reason-item"><i class="fas fa-users"></i><p>Atendimento humanizado</p></div>
+                    <div class="reason-item"><i class="fas fa-bullseye"></i><p>Soluções estratégicas</p></div>
+                    <div class="reason-item"><i class="fas fa-shield-alt"></i><p>Transparência total</p></div>
+                    <div class="reason-item"><i class="fas fa-bolt"></i><p>Agilidade e eficiência</p></div>
+                    <div class="reason-item"><i class="fas fa-award"></i><p>Experiência consolidada</p></div>
+                    <div class="reason-item"><i class="fas fa-check"></i><p>Compromisso com resultados</p></div>
+                </div>
+            </div>
+            <div class="porque-img anim">
+                <img src="assets/images/advogado-6.jpg" alt="Advogado em escritório">
+                <div class="porque-img-overlay"></div>
+                <div class="porque-img-text">
+                    <p class="porque-badge">ADVOCACIA ESTRATÉGICA</p>
+                    <p class="porque-quote">Técnica jurídica com clareza para decisões importantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="perfil" class="equipe">
+        <div class="section-container">
+            <div class="areas-header">
+                <div>
+                    <div class="label-with-line">
+                        <h2 class="section-label">PERFIL</h2>
+                        <span class="badge-line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="perfil-grid">
+                <div class="perfil-info anim">
+                    <img src="assets/images/advogado-1.jpg" alt="Dr. Bruno Machado" class="perfil-img">
+                    <div class="perfil-text">
+                        <h3 class="perfil-name">Dr. Bruno Machado</h3>
+                        <p class="perfil-bio">
+                            Dr. Bruno Machado é advogado, mestre e especialista com mais de 10 anos de experiência.
+                        </p>
+                        <p class="perfil-cursos">
+                            <strong>Autor dos cursos:</strong><br>
+                            - Fortalecendo-se para o divórcio<br>
+                            - Guia Prático do divórcio
+                        </p>
+                    </div>
+                </div>
+                <div class="perfil-videos anim">
+                    <div class="video-wrapper">
+                        <!-- Youtube Placeholder / Embed -->
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Fortalecendo-se para o divórcio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Fortalecendo-se para o divórcio</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Guia Prático do divórcio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Guia Prático do Divórcio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <div class="section-container contato-grid">
+            <div class="contato-left anim">
+                <div class="label-with-line gold-text">
+                    <h2 class="section-label">FALE CONOSCO</h2>
+                    <span class="badge-line"></span>
+                </div>
+                <p class="contato-desc">Estamos prontos para entender sua necessidade e indicar o melhor caminho jurídico.</p>
+                <div class="contato-info-list">
+                    <a href="tel:+5548991533133" class="contato-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(48) 991533133</span>
+                    </a>
+                    <a href="https://www.instagram.com/advogadobrunomachado/" target="_blank" class="contato-info-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>@advogadobrunomachado</span>
+                    </a>
+                    <a href="https://www.instagram.com/divorcio.aconselhamento/" target="_blank" class="contato-info-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>@divorcio.aconselhamento</span>
+                    </a>
+                    <a href="mailto:Principal.machado@gmail.com" class="contato-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Principal.machado@gmail.com</span>
+                    </a>
+                    <div class="contato-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rua Esteves Junior, n 50, Florianópolis-SC</span>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5548991533133&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-outline-gold">
+                    Falar pelo WhatsApp <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            <div class="contato-office-img anim">
+                <img src="assets/images/clean_office.png" alt="Escritório Machado Advocacia" class="office-img-style">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="section-container footer-inner">
+            <div>
+                <div class="footer-brand">MACHADO ADVOCACIA</div>
+                <p class="footer-disclaimer">Conteúdo informativo, sem promessa de resultado. Atendimento condicionado a análise de conflito de interesses e formalização profissional. Publicidade em conformidade com o Provimento nº 205/2021 do CFOAB e o Código de Ética e Disciplina da OAB.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 Machado Advocacia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a href="https://api.whatsapp.com/send?phone=5548991533133&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="whatsapp-float" id="whatsappFloat" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
