@@ -297,7 +297,7 @@ img { max-width: 100%; display: block; }
     text-transform: uppercase;
     letter-spacing: 0.18em;
     color: var(--gold);
-    margin-bottom: 28px;
+    margin-bottom: 8px;
 }
 
 .hero h1 {
@@ -343,6 +343,31 @@ img { max-width: 100%; display: block; }
 .btn-primary:hover {
     background: var(--gold);
     color: var(--bg-hero);
+}
+
+.btn-whatsapp-hero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 56px;
+    padding: 0 32px;
+    background: #25d366;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    box-shadow: 0 12px 40px rgba(37, 211, 102, 0.4);
+    border: none;
+    transition: var(--transition);
+    width: fit-content;
+}
+.btn-whatsapp-hero:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 16px 48px rgba(37, 211, 102, 0.6);
 }
 
 .btn-text {
@@ -917,25 +942,26 @@ img { max-width: 100%; display: block; }
     z-index: 99;
     width: 56px;
     height: 56px;
-    background: var(--gold);
-    color: var(--bg-hero);
+    background: #25D366;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-    box-shadow: 0 4px 20px rgba(200,164,108,0.5);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
     transition: var(--transition);
     animation: floatPulse 2s infinite;
 }
 .whatsapp-float:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 30px rgba(200,164,108,0.6);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+    color: #fff;
 }
 
 @keyframes floatPulse {
-    0%, 100% { box-shadow: 0 4px 20px rgba(200,164,108,0.5); }
-    50% { box-shadow: 0 4px 20px rgba(200,164,108,0.5), 0 0 0 12px rgba(200,164,108,0); }
+    0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5); }
+    50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5), 0 0 0 12px rgba(37, 211, 102, 0); }
 }
 
 /* === RESPONSIVE === */
@@ -1139,6 +1165,31 @@ img { max-width: 100%; display: block; }
 .video-wrapper iframe {
     border-radius: 4px;
     margin-bottom: 12px;
+}
+.video-thumb-link {
+    position: relative;
+    display: block;
+}
+.play-btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(37, 211, 102, 0.9);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: var(--transition);
+}
+.video-thumb-link:hover .play-btn-overlay {
+    background: #128c7e;
+    transform: translate(-50%, -50%) scale(1.1);
 }
 .video-wrapper p { font-size: 0.85rem; font-weight: 600; color: var(--text-primary); }
 
